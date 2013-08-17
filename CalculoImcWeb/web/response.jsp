@@ -11,8 +11,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cálculo del Indice de Masa Corporal</title>
+        <LINK rel="stylesheet" type="text/css" href="style/style.css">
     </head>
     <body>
+        <img src = "images/resultado.jpg" /> 
         <jsp:useBean id="datosBean" scope="session" class="servlets.imc.datosImc" />
         <jsp:setProperty name="datosBean" property="nombre" />
         <jsp:setProperty name="datosBean" property="estatura" />
@@ -31,5 +33,6 @@
             %>
             <h1><jsp:getProperty name="datosBean" property="nombre" />, tu IMC es de: <jsp:getProperty name="datosBean" property="imc" /></h1>
             <h1>Tu nivel es: <jsp:getProperty name="datosBean" property="nivel" /></h1>
+            <h2>Recuerda que una buena alimentación y una rutina de ejercicio son fundamentales para una buena salud. </h2>
     </body>
 </html>

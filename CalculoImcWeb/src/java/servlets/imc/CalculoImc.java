@@ -26,35 +26,35 @@ public class CalculoImc {
 
         if (vImc < 16) {
 
-            nivel = "Delgadez severa";
+            nivel = "Delgadez severa. Busca un especialista en nutrición.";
 
         } else if (vImc < 17) {
 
-            nivel = "Delgadez moderada";
+            nivel = "Delgadez moderada. Busca un especialista en nutrición.";
 
         } else if (vImc < 18.5) {
 
-            nivel = "Delgadez aceptable";
+            nivel = "Delgadez aceptable. ¡Felicidades! Te vendría bien ganar un poco de peso.";
 
         } else if (vImc < 25) {
 
-            nivel = "Normal";
+            nivel = "Normal. ¡Felicidades! Estás en excelente estado.";
 
         } else if (vImc < 30) {
 
-            nivel = "Sobrepeso";
+            nivel = "Sobrepeso. Busca un especialista en nutrición para ayudarte con tu alimentación.";
 
         } else if (vImc < 35) {
 
-            nivel = "Obesidad tipo I";
+            nivel = "Obesidad tipo I. Busca un especialista en nutrición para ayudarte con tu alimentación.";
 
         } else if (vImc <= 40) {
 
-            nivel = "Obesidad tipo II";
+            nivel = "Obesidad tipo II. ¡Cuidado! Busca un especialista en nutrición para ayudarte con tu alimentación.";
 
         } else if (vImc > 40) {
 
-            nivel = "Obesidad tipo III";
+            nivel = "Obesidad tipo III. ¡Cuidado! Busca un especialista en nutrición para ayudarte con tu alimentación.";
 
         }
 
