@@ -11,9 +11,10 @@ package servlets.imc;
 public class datosImc {
     
     private String nombre;
-    private Long estatura;
-    private Long peso;
-    private Long imc;
+    private double estatura;
+    private double peso;
+    private double imc;
+    private String nivel;
     
     public datosImc(){
         
@@ -36,43 +37,57 @@ public class datosImc {
     /**
      * @return the estatura
      */
-    public Long getEstatura() {
+    public double getEstatura() {
         return estatura;
     }
 
     /**
      * @param estatura the estatura to set
      */
-    public void setEstatura(Long estatura) {
+    public void setEstatura(double estatura) {
         this.estatura = estatura;
     }
 
     /**
      * @return the peso
      */
-    public Long getPeso() {
+    public double getPeso() {
         return peso;
     }
 
     /**
      * @param peso the peso to set
      */
-    public void setPeso(Long peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
     /**
      * @return the imc
      */
-    public Long getImc() {
+    public double getImc() {
         return imc;
     }
 
     /**
      * @param imc the imc to set
      */
-        public void setImc(Long imc) {
+        public void setImc(double imc) {
         this.imc = imc;
+    }
+
+    /**
+     * @return the nivel
+     */
+    public String getNivel() {
+        return nivel;
+    }
+
+    /**
+     * @param nivel the nivel to set
+     */
+    public void setNivel(String nivel) {
+        this.nivel = nivel;
     }
             
     

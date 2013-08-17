@@ -18,13 +18,18 @@
         <jsp:setProperty name="datosBean" property="estatura" />
         <jsp:setProperty name="datosBean" property="peso" />
         <jsp:setProperty name="datosBean" property="imc" />
-        <%-- CalculoImc calculo = new CalculoImc();
-            Long peso = Long.parseLong(request.getParameter("peso"));
-            Long estatura = Long.parseLong(request.getParameter("estatura"));
+        <% CalculoImc calculo = new CalculoImc();
+            double peso = datosBean.getPeso();
+            double estatura = datosBean.getEstatura();
             
-            calculo.CalcularImc(peso, estatura);
+            double imc = calculo.CalcularImc(peso, estatura);
+            String nivel = calculo.nivelImc(imc);
             
-            --%>
-            <h1><jsp:getProperty name="datosBean" property="nombre" />, su IMC es de: <jsp:getProperty name="datosBean" property="imc" /></h1>
+            datosBean.setImc(imc);
+            datosBean.setNivel(nivel);
+            
+            %>
+            <h1><jsp:getProperty name="datosBean" property="nombre" />, tu IMC es de: <jsp:getProperty name="datosBean" property="imc" /></h1>
+            <h1>Tu nivel es: <jsp:getProperty name="datosBean" property="nivel" /></h1>
     </body>
 </html>
